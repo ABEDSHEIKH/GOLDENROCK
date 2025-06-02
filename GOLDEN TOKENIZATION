@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GOLDEN TOKENIZATION</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+    .buttons {
+      margin-top: 2rem;
+    }
+    .btn {
+      background-color: #ffc107;
+      color: black;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #e0a800;
+    }
+    .lang-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .lang-switch button {
+      margin-left: 10px;
+      background: none;
+      border: 2px solid white;
+      color: white;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .social {
+      margin-top: 20px;
+    }
+    .social a {
+      color: #ffc107;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('ar')">ع</button>
+  </div>
+  <h1 id="title">GOLDEN TOKENIZATION</h1>
+  <p id="description">
+    A pioneering project focused on the future of digital asset tokenization and blockchain innovation.
+  </p>  <div class="buttons">
+    <a href="#" class="btn" id="whitepaper">Download Whitepaper</a>
+    <a href="https://x.com/Goldenrockgrop1?t=AXCe74L_oJAkEIjcR_zweQ&s=09" class="btn" target="_blank">Twitter</a>
+  </div>  <div class="social">
+    <p>&copy; 2025 Golden Rock Group</p>
+  </div>  <script>
+    const translations = {
+      en: {
+        title: "GOLDEN TOKENIZATION",
+        description: "A pioneering project focused on the future of digital asset tokenization and blockchain innovation.",
+        whitepaper: "Download Whitepaper"
+      },
+      ar: {
+        title: "ترميز جولدن - GOLDEN TOKENIZATION",
+        description: "مشروع رائد يركز على مستقبل ترميز الأصول الرقمية وابتكارات البلوكشين.",
+        whitepaper: "تحميل الورقة البيضاء"
+      }
+    };
+
+    function setLang(lang) {
+      document.getElementById('title').textContent = translations[lang].title;
+      document.getElementById('description').textContent = translations[lang].description;
+      document.getElementById('whitepaper').textContent = translations[lang].whitepaper;
+    }
+  </script></body>
+</html>
